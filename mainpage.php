@@ -11,16 +11,9 @@
         header("LOCATION: ./Register/login.php");
       }
 
-      $servername = "mysqlsvr38.world4you.com";
-      $username = "sql8774627";
-      $password = "fb*wujt";
-      $dbname = "7945756db1";
+      include './php_functions/log_into_database.php'
 
-      $conn = new mysqli($servername, $username, $password, $dbname);
-      // Check connection
-      if ($conn->connect_error) {
-          die("Connection failed: " . $conn->connect_error);
-      }
+      $conn = log_into_database();
 
      ?>
   </head>

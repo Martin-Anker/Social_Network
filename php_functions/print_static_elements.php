@@ -3,7 +3,7 @@ function print_header() {
   echo '<div class="header">
     <a href="#default" class="logo">GRUMPF</a>
   <div class="header-right">
-    <a href="./..//mainpage.php">Mainpage</a>
+    <a href="./../mainpage.php">Mainpage</a>
     <a href="./../posts.php">Chat</a>
     <a href="./../nichts.html">Roadmap</a>';
 

@@ -77,16 +77,7 @@
   <div class="message_body">
     <?php
 
-    $servername = "mysqlsvr38.world4you.com";
-    $username = "sql8774627";
-    $password = "fb*wujt";
-    $dbname = "7945756db1";
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    $conn = log_into_database();
 
     $out_sql = "SELECT * FROM Posts ORDER BY ID DESC LIMIT 20";
     $result = $conn->query($out_sql);
