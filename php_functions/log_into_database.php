@@ -1,9 +1,9 @@
 <?php
 function log_into_database() {
-  $servername = "mysqlsvr38.world4you.com";
-  $username = "sql8774627";
-  $password = "fb*wujt";
-  $dbname = "7945756db1";
+  $servername = "************";
+  $username = "************";
+  $password = "***********";
+  $dbname = "**********";
 
   $conn = new mysqli($servername, $username, $password, $dbname);
   // Check connection
